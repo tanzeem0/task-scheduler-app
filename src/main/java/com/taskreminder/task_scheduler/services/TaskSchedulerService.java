@@ -1,5 +1,5 @@
 package com.taskreminder.task_scheduler.services;
 
 public interface TaskSchedulerService {
-    void runScheduler();
+    void runScheduler(String name,int value);
 }

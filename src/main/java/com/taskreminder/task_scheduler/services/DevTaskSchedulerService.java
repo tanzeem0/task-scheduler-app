@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 public class DevTaskSchedulerService implements TaskSchedulerService {
 
     @Override
-    public void runScheduler() {
-        System.out.println("Running DEV scheduler.....");
+    public void runScheduler(String name,int value) {
+        System.out.println("Running " + name + " DEV scheduler..... at every " + value + " secs");
     }
 }

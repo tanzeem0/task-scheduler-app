@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 @Profile("prod")
 public class ProdTaskSchedulerService  implements TaskSchedulerService{
     @Override
-    public void runScheduler() {
+    public void runScheduler(String name, int value) {
         System.out.println("Running PROD scheduler....");
     }
 }
